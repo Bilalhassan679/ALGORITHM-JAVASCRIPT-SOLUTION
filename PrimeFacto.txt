@@ -1,0 +1,25 @@
+const PrimeFac=()=>{
+  const ansArry=[];
+  let primeValue=12
+  const primeClone=primeValue
+    
+  for(i=2;i<=primeValue;i++){
+    if(primeClone/i==1){
+      console.log("Prime Number")
+      
+    }
+    else{
+    while (primeValue%i==0) {
+    primeValue=primeValue/i;
+    ansArry.push(i);
+      }
+    }
+    
+  }
+  
+    
+
+  console.log(ansArry);
+  
+}
+PrimeFac()

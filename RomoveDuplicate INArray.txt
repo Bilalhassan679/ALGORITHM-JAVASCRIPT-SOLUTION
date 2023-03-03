@@ -1,0 +1,15 @@
+const FindCommonValue=()=>{
+  const input1=[1,1,2,4,4,5,7,7];
+  const removeDupArr=[];
+  function RemoveDup(input1){
+    for(let i=0;i<input1.length;i++){
+      if(input1[i]==input1[i+1]){
+        continue;
+      }else  {removeDupArr.push(input1[i])};
+    }
+  }
+  
+   RemoveDup(input1);
+  console.log(removeDupArr)
+}
+FindCommonValue();

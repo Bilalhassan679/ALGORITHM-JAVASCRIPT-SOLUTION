@@ -1,0 +1,22 @@
+const a=100;
+  let arr=[];
+  const arrowFunction=()=>{
+    
+  for(let i=2;i<=a;i++){
+    let index=0;
+    for(let j=2;j<=i;j++){
+      if(i%j==0){
+      index++;
+      if(index==1){
+        arr.push(i);
+      }
+      else if(index>1){
+        arr.pop(i);
+        break;
+      }
+  }
+}
+}
+console.log("arr",arr)
+
+  }

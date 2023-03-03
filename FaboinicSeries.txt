@@ -1,0 +1,14 @@
+function FibonacciNumber(){
+  let arryLenght=10;
+  let fabonaArry=[];
+  var sum=0;
+  for(let i=0;i<arryLenght;i++){
+    if(i==0 || i==1){
+      fabonaArry.push(i);
+    }else{
+    fabonaArry[i]=fabonaArry[i-2]+fabonaArry[i-1]
+    }
+    console.log(fabonaArry)
+  }
+};
+FibonacciNumber();  
